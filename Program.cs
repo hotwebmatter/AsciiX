@@ -88,6 +88,7 @@ namespace AsciiX
                             input = ReadLine();
                         }
                         GenerateX(choice);
+                        message = "";
                         WriteLine("Press any key to return to menu.");
                         ReadKey();
                         break;
