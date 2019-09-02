@@ -156,6 +156,6 @@ Press any key to close this window . . .
 
 # Note
 
-The Algorithmic X does not currently work correctly with even-numbered height input
+The Algorithmic X does not currently work correctly with even-numbered height input.
 
 This can be corrected by sanitizing input using conditional test with modulo operator (%).
