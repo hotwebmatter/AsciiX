@@ -86,7 +86,9 @@ namespace AsciiX
                         input = ReadLine();
                         while (!int.TryParse(input, out choice))
                         {
-                            message = "Generating Algorithmic X ...\nEnter desired height of X:\n\nInvalid input.\nPlease choose an odd number between 5 and 55.";
+                            message = "Generating Algorithmic X ...\nEnter desired height of X:\n";
+                            message += "\nInvalid input.\nPlease choose a number greater than two.";
+                            message += "\nLarge values require a large console to display correctly.";
                             WriteMenu(message);
                             input = ReadLine();
                         }
