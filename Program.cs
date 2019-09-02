@@ -13,9 +13,35 @@ namespace AsciiX
             WriteLine(output);
         }
 
-        static void GenerateX()
+        static void RepeatChar(string character, int reps)
         {
-            WriteLine("Generating Algorithmic X ...");
+            for (int i = 0; i < reps; i++)
+            {
+                Write(character);
+            }
+        }
+
+        static void GenerateX(int height)
+        {
+            WriteLine("The desired height is {0}.", height);
+
+            //generate algorithmic X
+            for (int i = 0; i < height/2; i++)
+            {
+                RepeatChar(" ", i+1);
+                RepeatChar("#", 1);
+                RepeatChar(" ", height - (2 * (i + 1)));
+                WriteLine("#");
+            }
+            RepeatChar(" ", (height / 2) + 1);
+            WriteLine("#");
+            for (int i = (height / 2) - 1; i > -1; i--)
+            {
+                RepeatChar(" ", i + 1);
+                RepeatChar("#", 1);
+                RepeatChar(" ", height - (2 * (i + 1)));
+                WriteLine("#");
+            }
         }
         static void Main(string[] args)
         {
@@ -39,6 +65,8 @@ namespace AsciiX
                         Environment.Exit(0);
                         break;
                     case 1:
+                        WriteLine("Generating ASCII Art X ...");
+                        WriteLine();
                         WriteLine(" __   __");
                         WriteLine(" \\ \\ / /");
                         WriteLine("  \\ V /");
@@ -46,9 +74,22 @@ namespace AsciiX
                         WriteLine("  / . \\");
                         WriteLine(" /_/ \\_\\");
                         WriteLine();
+                        WriteLine("Press any key to return to menu.");
+                        ReadKey();
                         break;
                     case 2:
-                        GenerateX();
+                        message = "Generating Algorithmic X ...\nEnter desired height of X:";
+                        WriteMenu(message);
+                        input = ReadLine();
+                        while (!int.TryParse(input, out choice))
+                        {
+                            message = "Generating Algorithmic X ...\nEnter desired height of X:\n\nInvalid input.\nPlease choose an odd number between 5 and 55.";
+                            WriteMenu(message);
+                            input = ReadLine();
+                        }
+                        GenerateX(choice);
+                        WriteLine("Press any key to return to menu.");
+                        ReadKey();
                         break;
                     default:
                         message = "Please choose 0, 1, or 2 next time.";
