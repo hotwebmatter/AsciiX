@@ -30,7 +30,7 @@ Choose an option:
 
 To exit, press 0 (zero) key.
 
-
+2
 Generating Algorithmic X ...
 Enter desired height of X:
 5
@@ -48,7 +48,7 @@ Choose an option:
 
 To exit, press 0 (zero) key.
 
-
+2
 Generating Algorithmic X ...
 Enter desired height of X:
 15
@@ -76,7 +76,7 @@ Choose an option:
 
 To exit, press 0 (zero) key.
 
-
+2
 Generating Algorithmic X ...
 Enter desired height of X:
 55
