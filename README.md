@@ -156,6 +156,5 @@ Press any key to close this window . . .
 
 # Note
 
-The Algorithmic X does not currently work correctly with even-numbered height input.
-
-This can be corrected by sanitizing input using conditional test with modulo operator (%).
+In order to make the Algorithmic X work correctly with even-numbered height input,
+use modulo operator (%) to conditionally omit center if height is divisible by two.
