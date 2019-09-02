@@ -33,8 +33,11 @@ namespace AsciiX
                 RepeatChar(" ", height - (2 * (i + 1)));
                 WriteLine("#");
             }
-            RepeatChar(" ", (height / 2) + 1);
-            WriteLine("#");
+            if (height % 2 != 0)
+            {
+                RepeatChar(" ", (height / 2) + 1);
+                WriteLine("#");
+            }
             for (int i = (height / 2) - 1; i > -1; i--)
             {
                 RepeatChar(" ", i + 1);
