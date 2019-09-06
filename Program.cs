@@ -1,6 +1,15 @@
 ﻿using System;
 using static System.Console;
 
+/**
+ * ######################################################
+ * ##    Programming Assignment #3                     ##
+ * ##    Developer: Matthew Obert                      ##
+ * ##    Date Submitted: September 06 2019             ##
+ * ##    Purpose: Generate ASCII and Algorithmic X.    ##
+ * ######################################################
+ */
+
 namespace AsciiX
 {
     class Program
