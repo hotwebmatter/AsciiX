@@ -1,6 +1,3 @@
-﻿using System;
-using static System.Console;
-
 /**
  * ######################################################
  * ##    Programming Assignment #3                     ##
@@ -9,6 +6,9 @@ using static System.Console;
  * ##    Purpose: Generate ASCII and Algorithmic X.    ##
  * ######################################################
  */
+
+using System;
+using static System.Console;
 
 namespace AsciiX
 {
