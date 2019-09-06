@@ -1,5 +1,7 @@
 # AsciiX
-Third programming exercise for C# class
+Third programming exercise for C# class.
+
+Generates ASCII and algorithmic X output.
 
 ## Example output
 
