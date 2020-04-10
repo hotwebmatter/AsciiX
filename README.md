@@ -5,8 +5,6 @@ Not actually assigned by professor, just based on exercise in textbook.
 
 Generates ASCII and algorithmic X output.
 
-README updated Feb 29 2020 to bring this project into the top 3 listed on my GitHub Overview.
-
 ## Example output
 
 ```
